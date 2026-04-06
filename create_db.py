@@ -3,16 +3,16 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 
-print("1. Lecture du fichier RAG.txt...")
+print("1. Lecture du RAG")
 loader = TextLoader("RAG.txt", encoding="utf-8")
 docs = loader.load()
 
-print("2. Découpage du texte en segments (chunks)...")
+print("2. Découpage du texte chunks")
 # On découpe par blocs de 600 caractères, avec un chevauchement de 100 caractères pour ne pas couper une idée en deux.
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=100)
 splits = text_splitter.split_documents(docs)
 
-print("3. Vectorisation et création de la base de données ChromaDB...")
+print("3. Vectorisation et création de la base de données ChromaDB")
 # On utilise le même modèle d'embedding que dans agent_cyber.py
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
