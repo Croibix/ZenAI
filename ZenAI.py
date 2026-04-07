@@ -56,10 +56,10 @@ def capture_user_Prompt_Input():
         lines.append(line)
     return "\n".join(lines).strip()
 
-def enrich_query(user_input, mode):
+def enrich_query(user_input, agent_Mode):
     #Prépare la requête pour l'IA en ajoutant des métadonnées si nécessaire 
     query_final = user_input
-    if mode == "LOG":
+    if agent_Mode == "LOG":
         # Détection automatique pour aider l'IA avec la règle R-001 
         nb_fail = user_input.count("Failed password")
         if nb_fail > 0:
@@ -78,7 +78,7 @@ def blacklist_IP(llm_response):
                 f.write(f"{ip}\n")
         print(f"[SYSTÈME] {len(set(alert_ips))} IP(s) ajoutée(s) à blacklist.txt")
 
-# ----------------- BOUCLE PRINCIPALE ----------------------
+# -------------------- MAIN --------------------------
 # Choix du mode à utiliser
 agent_Mode = get_Agent_Mode()
 
