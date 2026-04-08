@@ -20,7 +20,7 @@ astuceMessage = "[ASTUCE] Tapez 'FIN' sur la dernière ligne pour valider."
 Separateur = "\n" + "-"*30
 
 # ------------------ FONCTIONS ------------------------
-def get_Agent_Mode():
+def get_Agent_Mode(): 
     print("\n" + "="*60)
     print("🛡️ AGENT SOC IA (ZanAI) 🛡️ - Analyse de logs et expert cyber")
     print("\n[CHOIX DU MODE]\n" + helpMessage)

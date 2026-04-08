@@ -1,40 +1,54 @@
-# 🛡️ Agent SOC IA (ZanAI) - Analyse de Logs & RAG Local
+# 🛡️ ZenAI: AI SOC Agent - Log Analysis & Local RAG 🛡️
 
-Ce projet est un agent d'intelligence artificielle spécialisé en cybersécurité (SOC). Il est capable d'analyser des journaux d'événements (logs) pour détecter des attaques (Bruteforce, SQLi, DoS) et de répondre à des questions techniques en s'appuyant sur une base de connaissances métier grâce à la technologie **RAG (Retrieval-Augmented Generation)**.
+ZenAI is a specialized Cybersecurity (SOC) AI agent designed to analyze system logs, detect ongoing attacks, and provide technical cybersecurity answers. The model is enhanced with **RAG (Retrieval-Augmented Generation)** to ensure high accuracy and context-aware responses.
 
-L'intégralité de l'analyse s'exécute **en local**, garantissant la confidentialité absolue des logs analysés.
+This SOC Agent **RUNS ENTIRELY LOCALLY**, ensuring the **confidentiality** and privacy of the prompts and analyzed data.
 
-## 🚀 Fonctionnalités principales
+## 🚀 Key Features
 
-* **Routage intelligent :** L'agent détecte si l'utilisateur soumet des logs (analyse stricte et binaire) ou pose une question (mode expert cyber).
-* **Analyse de Logs Automatisée :** Application stricte de règles de détection (R-001 à R-005) définies dans la base de connaissances.
-* **Blacklist Dynamique :** Extraction automatique des adresses IP malveillantes (statut ALERTE) et ajout dans un fichier `blacklist.txt`.
-* **100% Local :** Propulsé par Ollama (LLM & Embeddings) et ChromaDB (Base vectorielle).
+* **Customizable Training Dataset:** Adapt the agent to your specific environment by adding your own documents or company policies to the RAG context.
+* **Automated Log Analysis:** Real-time classification of threats based on predefined security detection rules.
+* **Dynamic Blacklisting:** Suspicious IP addresses (ALERT status) are automatically extracted and appended to a `blacklist.txt` file for remediation.
+* **Privacy-First (100% Local):** All components are designed to run locally, preventing sensitive log data from leaving your infrastructure.
 
-## 🧠 Architecture et Fonctionnement
+## 🧠 Architecture
 
-Le projet repose sur 3 composants clés :
-1. **Ollama :** Fait tourner les modèles d'IA en local (`llama3.2` pour la réflexion et `nomic-embed-text` pour la vectorisation).
-2. **LangChain :** Orchestre la logique du RAG, les prompts dynamiques et la communication entre les modèles et la base de données.
-3. **ChromaDB :** Base de données vectorielle locale qui stocke le référentiel cyber (`RAG.txt`) pour permettre à l'IA de retrouver instantanément la bonne règle à appliquer.
+The project leverages three core components:
+* **Ollama:** Manages local AI models (`llama3.2` for reasoning and `nomic-embed-text` for vectorization).
+* **LangChain:** Orchestrates the RAG pipeline, handles dynamic prompting, and manages the interface between the LLM and the database.
+* **ChromaDB:** A high-performance vector database that stores the security context and rules, providing the agent with a reliable reference for analysis.
 
-### Structure des fichiers
-* `agent_cyber.py` : Le script principal de l'agent interactif.
-* `create_db.py` : Script d'ingestion pour transformer le fichier texte en base vectorielle ChromaDB.
-* `RAG.txt` : La base de connaissances métier (Règles, normes, datasets d'exemples).
-* `load_rag.py` : Script utilitaire pour vérifier la lisibilité du RAG.
-* `blacklist.txt` : Fichier généré automatiquement contenant les IP bannies.
+## 📄 File Structure
+* `chroma_db/`: Folder containing the persistent vector database.
+* `training_data/`: Directory for source files used to build the RAG context (.md, .txt, .pdf and .csv supported).
+* `ZenAI.py`: The main AI agent script **[RUN THIS FILE]**.
+* `create_db.py`: Ingestion script to process files from `/training_data` into ChromaDB.
+* `check_db_content.py`: Utility script to inspect the current state and composition of the database.
+* `blacklist.txt`: Automatically generated file containing banned IP addresses.
 
 ---
 
-## 🛠️ Installation et Prérequis
+## 🛠️ Installation & Prerequisites
 
-### 1. Prérequis système
-* **Python 3.9+**
-* **Ollama** installé sur votre machine (disponible sur [ollama.com](https://ollama.com/)).
+### System requirements
+* **OS:** Windows 10/11, Linux, or MacOS.
+### Software requirements
+* **Python:** 3.10+ (Available at [python.org](https://www.python.org/downloads/)).
+* **Ollama:** Locally installed (Available at [ollama.com](https://ollama.com/download)).
 
-### 2. Téléchargement des modèles IA
-Ouvrez un terminal et téléchargez les modèles requis par le projet :
+### ⚙️ Setup
+Open your terminal and install the required Python packages:
+```bash
+pip install langchain-ollama langchain-chroma langchain-core langchain-community langchain-text-splitters pypdf
+```
+Then install the models : 
 ```bash
 ollama pull llama3.2
+```
+```bash
 ollama pull nomic-embed-text
+```
+You can now launch ZenAI
+```
+python3 ZenAI.py
+```

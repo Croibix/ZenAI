@@ -1,17 +1,20 @@
 import os
 import glob
+import time
+from rich.console import Console
 from langchain_community.document_loaders import TextLoader, PyPDFLoader, CSVLoader
 from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 
-
 # ---------------------- VARIABLES ----------------------------
 DB_PATH = "./chroma_db"       			# Dossier de la base de données
 EMBEDDING_MODEL = "nomic-embed-text"	# Model d'embeddin choisi
 SEPARATEUR = "\n" + "-"*30
+console = Console()
+START_TIME = time.perf_counter()
 
-# --- CONFIGURATION DES DÉCOUPAGES ---
+# ---------- CONFIGURATION DES DÉCOUPAGES MARKDOWN ------------
 headers_to_split_on = [
     ("#", "Titre 1"),
     ("##", "Titre 2"),
@@ -21,7 +24,7 @@ markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_sp
 
 # 2. Découpage de sécurité pour les PDF/CSV ou les blocs Markdown trop longs
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1000, 
+    chunk_size=800, 
     chunk_overlap=100
 )
 
@@ -53,7 +56,7 @@ def ingest_PDF(file_Path):
     return text_splitter.split_documents(pdf_docs)
 
 def ingest_CSV(file_Path):
-    loader = CSVLoader(file_Path)
+    loader = CSVLoader(file_Path, encoding='utf-8')
     return loader.load()
 
 def check_Folder(data_Path):
@@ -98,12 +101,22 @@ def ingest_Data(data_Path):
 
 def Vectorisation_et_save(all_chunks):
     embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
-    vectorstore = Chroma.from_documents(
-        documents=all_chunks, 
-        embedding=embeddings, 
-        persist_directory=DB_PATH
-    )
-    print(f"✅ [SUCCES] : Base de données sauvegardée dans le dossier '{DB_PATH}'\n")
+    with console.status("[bold green]Vectorisation et création de la base de données...", spinner="dots"):
+        vectorstore = Chroma.from_documents(
+            documents=all_chunks, 
+            embedding=embeddings, 
+            persist_directory=DB_PATH
+        )
+    console.print(f"[bold blue]✅[/bold blue] [SUCCES] : Base de données sauvegardée dans '{DB_PATH}'")
+
+def get_execution_time(start_time):
+    end_time = time.perf_counter()
+    duration = end_time - start_time
+    minutes, seconds = divmod(duration, 60)
+    if minutes > 0:
+        print(f"BDD Créé en {int(minutes)} min et {int(seconds)} sec")
+    else:
+        print(f"BDD Créé en {duration:.2f} secondes")
 
 # ------------------ DICTIONNAIRE -----------------------------
 
@@ -116,18 +129,16 @@ EXTENTIONS: dict[str, callable] = {
 
 # --------------------- MAIN ------------------------------------
 while True:
-	try:
-		print(SEPARATEUR)
-		print("\nQuel est le nom du dossier contenant les données d'entraînement ?")
-		print("[AIDE] 💡: Formats supportés ==> .txt, .md, .pdf et .csv")
-		all_chunks = ingest_Data(input("> "))
-		print('\n')
-		Vectorisation_et_save(all_chunks)
-		print("Avez vous d'autre documents à ajouter ? OUI / NON")
-		if input("> ") == "OUI":
-			continue
-		else:
-			break
-    
-	except KeyboardInterrupt:
-		break
+    try:
+        print(SEPARATEUR)
+        print("\nQuel est le nom du dossier contenant les données d'entraînement ?")
+        print("[AIDE] 💡: Formats supportés ==> .txt, .md, .pdf et .csv")
+        all_chunks = ingest_Data(input("> "))
+        print('\n')
+        Vectorisation_et_save(all_chunks)
+        get_execution_time(START_TIME)
+        print("Avez vous d'autre documents à ajouter ? OUI / NON")
+        if input("> ") != "OUI":
+            break    
+    except KeyboardInterrupt:
+        break
