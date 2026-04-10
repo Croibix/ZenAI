@@ -67,8 +67,6 @@ def enrich_query(user_input, agent_Mode):
     return query_final
 
 def blacklist_IP(llm_response):
-    """Extrait les IP en ALERTE de la réponse IA et les ajoute au fichier."""
-    # Pattern : Cherche l'IP associée au mot ALERTE 
     pattern = r"IP\s*:\s*(\d{1,3}(?:\.\d{1,3}){3}).*?STATUT\s*:\s*ALERTE"
     alert_ips = re.findall(pattern, llm_response, re.DOTALL | re.IGNORECASE)
 

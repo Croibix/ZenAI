@@ -8,8 +8,8 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 
 # ---------------------- VARIABLES ----------------------------
-DB_PATH = "./chroma_db"       			# Dossier de la base de données
-EMBEDDING_MODEL = "nomic-embed-text"	# Model d'embeddin choisi
+DB_PATH = "./chroma_db"                 # Dossier de la base de données
+EMBEDDING_MODEL = "nomic-embed-text"    # Model d'embeddin choisi
 SEPARATEUR = "\n" + "-"*30
 console = Console()
 START_TIME = time.perf_counter()
@@ -66,11 +66,11 @@ def check_Folder(data_Path):
     return True
 
 def check_Extention(file_Path):
-	file_ext = os.path.splitext(file_Path)[1].lower()
-	file_Extention = EXTENTIONS.get(file_ext)
-	if file_Extention is None:
-		print(f"[ERREUR] : Format non supporté ==> {file_Path}")
-	return file_Extention
+    file_ext = os.path.splitext(file_Path)[1].lower()
+    file_Extention = EXTENTIONS.get(file_ext)
+    if file_Extention is None:
+        print(f"[ERREUR] : Format non supporté ==> {file_Path}")
+    return file_Extention
 
 def check_db_created(all_chunks):
     if not all_chunks:
@@ -82,22 +82,22 @@ def check_db_created(all_chunks):
     return True
 
 def ingest_Data(data_Path):
-	if not check_Folder(data_Path):
-		return []
+    if not check_Folder(data_Path):
+        return []
 
-	all_chunks = []
-	for file_path in glob.glob(f"{data_Path}/*"):
-		print(f"Lecture de : {file_path}...")
-		extention = check_Extention(file_path)
-		if extention is not None:
-			chunks = extention(file_path)
-			all_chunks.extend(chunks)
+    all_chunks = []
+    for file_path in glob.glob(f"{data_Path}/*"):
+        print(f"Lecture de : {file_path}...")
+        extention = check_Extention(file_path)
+        if extention is not None:
+            chunks = extention(file_path)
+            all_chunks.extend(chunks)
 
-	if check_db_created(all_chunks):
-		return all_chunks
-	else :
-		print("[ERREUR] : Les chunks n'ont pas été correctement créés")
-		return []
+    if check_db_created(all_chunks):
+        return all_chunks
+    else :
+        print("[ERREUR] : Les chunks n'ont pas été correctement créés")
+        return []
 
 def Vectorisation_et_save(all_chunks):
     embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
