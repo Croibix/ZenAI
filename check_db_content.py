@@ -12,7 +12,6 @@ metadatas = all_data['metadatas']
 documents = all_data['documents']
 
 # ------------------ DATA DISPLAY ------------------------
-# Count Files
 total_Files = {"pdf": 0, "csv": 0, "md": 0, "txt": 0}
 for i, meta in enumerate(metadatas):
     source = meta.get('source', '').lower()
