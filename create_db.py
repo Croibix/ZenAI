@@ -11,7 +11,7 @@ from langchain_chroma import Chroma
 DB_PATH = "./chroma_db"                 # Dossier de la base de données
 EMBEDDING_MODEL = "nomic-embed-text"    # Model d'embeddin choisi
 SEPARATEUR = "\n" + "-"*30
-console = Console()
+CONSOLE = Console()
 START_TIME = time.perf_counter()
 
 # ---------- CONFIGURATION DES DÉCOUPAGES MARKDOWN ------------
@@ -29,7 +29,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 )
 
 # -------------------- FONCTIONS -------------------------------
-# Retournent une liste de Chunk
+# Retourne une liste de Chunk
 def ingest_MD(file_Path):
     with open(file_Path, 'r', encoding='utf-8') as f:
         text = f.read()
@@ -59,6 +59,24 @@ def ingest_CSV(file_Path):
     loader = CSVLoader(file_Path, encoding='utf-8')
     return loader.load()
 
+def ingest_Data(data_Path):
+    if not check_Folder(data_Path):
+        return []
+
+    all_chunks = []
+    for file_path in glob.glob(f"{data_Path}/*"):
+        print(f"Lecture de : {file_path}...")
+        extention = check_Extention(file_path)
+        if extention is not None:
+            chunks = extention(file_path)
+            all_chunks.extend(chunks)
+
+    if check_db_created(all_chunks):
+        return all_chunks
+    else :
+        print("[ERREUR] : Les chunks n'ont pas été correctement créés")
+        return []
+
 def check_Folder(data_Path):
     if not os.path.exists(data_Path):
         print(f"[ERREUR] : Le dossier '{data_Path}' n'existe pas")
@@ -81,33 +99,15 @@ def check_db_created(all_chunks):
     print("Création de la base ChromaDB en cours (cela peut prendre quelques minutes)...")
     return True
 
-def ingest_Data(data_Path):
-    if not check_Folder(data_Path):
-        return []
-
-    all_chunks = []
-    for file_path in glob.glob(f"{data_Path}/*"):
-        print(f"Lecture de : {file_path}...")
-        extention = check_Extention(file_path)
-        if extention is not None:
-            chunks = extention(file_path)
-            all_chunks.extend(chunks)
-
-    if check_db_created(all_chunks):
-        return all_chunks
-    else :
-        print("[ERREUR] : Les chunks n'ont pas été correctement créés")
-        return []
-
 def Vectorisation_et_save(all_chunks):
     embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
-    with console.status("[bold green]Vectorisation et création de la base de données...", spinner="dots"):
+    with CONSOLE.status("[bold green]Vectorisation et création de la base de données...", spinner="dots"):
         vectorstore = Chroma.from_documents(
             documents=all_chunks, 
             embedding=embeddings, 
             persist_directory=DB_PATH
         )
-    console.print(f"[bold blue]✅[/bold blue] [SUCCES] : Base de données sauvegardée dans '{DB_PATH}'")
+    CONSOLE.print(f"[bold blue]✅[/bold blue] [SUCCES] : Base de données sauvegardée dans '{DB_PATH}'")
 
 def get_execution_time(start_time):
     end_time = time.perf_counter()

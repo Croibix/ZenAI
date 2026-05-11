@@ -37,14 +37,6 @@ def get_Agent_Mode():
             case _:
                 print("Je n'ai pas compris votre demande\n" + helpMessage)
 
-def template_to_use(agent_Mode):
-    if agent_Mode == "LOG":
-        return  ChatPromptTemplate.from_template(template_logs)
-    elif agent_Mode == "EXPERT":
-        return ChatPromptTemplate.from_template(template_expert)
-    else:
-        print("Erreur lors du choix du template : Template inexistant")
-
 def capture_user_Prompt_Input():
     lines = []
     while True:
@@ -65,6 +57,15 @@ def enrich_query(user_input, agent_Mode):
         if nb_fail > 0:
             query_final += f"\n(Note système : {nb_fail} échecs de connexion détectés)"
     return query_final
+
+def template_to_use(agent_Mode):
+    if agent_Mode == "LOG":
+        return  ChatPromptTemplate.from_template(template_logs)
+    elif agent_Mode == "EXPERT":
+        return ChatPromptTemplate.from_template(template_expert)
+    else:
+        print("Erreur lors du choix du template : Template inexistant")
+
 
 def blacklist_IP(llm_response):
     pattern = r"IP\s*:\s*(\d{1,3}(?:\.\d{1,3}){3}).*?STATUT\s*:\s*ALERTE"
@@ -88,7 +89,7 @@ while True:
         user_Promt_Input = capture_user_Prompt_Input()
         if not user_Promt_Input: continue
 
-        # Enrichissement pour le mode LOG (Bruteforce SSH R-001) [cite: 6, 7]
+        # Enrichissement pour le mode LOG 
         query_final = enrich_query(user_Promt_Input, agent_Mode)
 
         # Exécution de la chaîne IA
